@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PainelController">
+   <children>
+      <MenuBar>
+         <menus>
+            <Menu mnemonicParsing="false" text="Home">
+               <items>
+                  <MenuItem fx:id="menuAreaPrincipal" mnemonicParsing="false" onAction="#onMenuItemMenuAreaPrincipal" text="Área Principal" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Cliente">
+               <items>
+                  <MenuItem fx:id="menuAreaCliente" mnemonicParsing="false" onAction="#onMenuItemMenuAreaCliente" text="Área Cliente" />
+                  <MenuItem fx:id="menuAgendamento" mnemonicParsing="false" onAction="#onMenuAgendamento" text="Agendamento" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Serviço">
+               <items>
+                  <MenuItem fx:id="menuAreaServico" mnemonicParsing="false" onAction="#onMenuItemMenuAreaServico" text="Área Serviço" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Relatório">
+               <items>
+                  <MenuItem fx:id="menuAreaRelatorio" mnemonicParsing="false" onAction="#onMenuItemMenuAreaRelatorio" text="Área de Relatórios" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <TableView fx:id="tableViewExtrato" prefHeight="374.0" prefWidth="630.0">
+         <columns>
+            <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="tableColumnCliente" prefWidth="75.0" text="CLIENTE" />
+            <TableColumn fx:id="tableColumnServico" prefWidth="75.0" text="SERVICO" />
+            <TableColumn fx:id="tableColumnValor" prefWidth="75.0" text="VALOR" />
+            <TableColumn fx:id="tableColumnData" prefWidth="75.0" text="DATA" />
+            <TableColumn fx:id="tableColumnHorario" prefWidth="75.0" text="HORA" />
+            <TableColumn fx:id="tableColumnObservacao" prefWidth="104.0" text="OBSERVACAO" />
+            <TableColumn fx:id="tableColumnFinalizar" prefWidth="75.0" />
+         </columns>
+      </TableView>
+   </children>
+</VBox>
