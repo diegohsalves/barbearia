@@ -1,2 +1,2 @@
 # barbearia
-Sistema em Desktop para Barbearia
+Sistema Desktop para Barbearia
